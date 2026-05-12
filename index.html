@@ -3,49 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>BiblioLivre</title>
+    <link rel="shortcut icon" href="images/booksFavicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="form-image">
-            <img src="images/drDoomStudying.png">
+    <header>
+        <div class="header-box">
+            <h1><span class="bookEmoji">📖</span>Biblio<span class="libre">Libre</span></h1>
+            <div class="header-links">
+                <a href="index.html" >Início</a>
+                <a href="pages/telaAcervo.html">Acervo</a>
+                <a href="pages/telaSobre.html">Sobre o Projeto</a>
+            </div>
+            <button><a href="pages/telaCadastro.html">Entrar/Cadastrar</a></button>
         </div>
-        <div class="form">
-            <form action="#">
-                <div class="form-header">
-                    <div class="title">
-                        <h1>Cadastre-se</h1>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <div class="input-box">
-                        <label for="cpf">CPF:</label>
-                        <input onkeydown="formatarCPF()" id="cpf" type="text" maxlength="11" name="cpf" placeholder="000.000.000-00" required>
-
-                        <label for="firstname">Primeiro Nome</label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
-
-                        <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
-
-                        <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
-
-                        <label for="confirm-password">Confirmar Senha</label>
-                        <input id="confirm-password" type="password" name="confirm-password" placeholder="Confirme sua senha" required>
-                    </div>
-                </div>
-
-                <div class="continue-button">
-                    <button onclick="cadastrar()"><a href="#">Continuar</a></button>
-                </div>
-            </form>
-            <p class="link-cadastro">Já possui cadastro? <a href="telaLogin.html">Entrar</a></p>
-        </div>
-    </div>
-    <script src="javascript.js"></script>
+    </header>
+    <a href="pages/telaCadastro.html">Cadastro</a>
+    <a href="pages/telaLogin.html">Login</a>
 </body>
 </html>
