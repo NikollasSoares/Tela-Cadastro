@@ -70,22 +70,72 @@ header {
   text-underline-offset: 5px;
 }
 
-header button {
+header .brown-button {
   padding: 10px 25px;
   border-radius: 5px;
   border: 1px solid var(--border);
   background-color: var(--white);
 }
 
-header button a {
+header .brown-button a {
   text-decoration: none;
   color: var(--text-dark);
 }
 
-header button:hover {
+header .brown-button:hover {
   background: var(--text-dark);
+  cursor: pointer;
 }
 
-header button:hover a {
+header .brown-button:hover a {
   color: var(--white);
+}
+
+main {
+  margin: auto;
+  max-width: 1100px;
+}
+
+.main-container {
+  display: flex;
+  height: 88vh;
+  align-items: center;
+}
+
+.main-text {
+  width: 50%;
+  margin-left: 50px;
+}
+
+.main-text h1 {
+  color: var(--text-dark);
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.main-text p {
+  color: var(--text-mid);
+  font-size: 1.5rem;
+}
+/*
+.main-text button {
+  margin-top: 100px;
+  cursor: pointer;
+  border: 1px solid var(--text-dark);
+  padding: 10px;
+  border-radius: 7px;
+  background-color: var(--cream-dark);
+}
+
+.main-text button a {
+  text-decoration: none;
+  color: var(--text-mid);
+}
+*/
+.main-image {
+  width: 50%;
+}
+
+.main-image img {
+  max-width: 470px;
 }
