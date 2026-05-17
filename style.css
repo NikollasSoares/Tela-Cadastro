@@ -34,10 +34,10 @@ header {
 
 .header-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 100%;
-  max-width: 1200px;
+  max-width: 1080px;
   margin: auto;
 }
 
@@ -93,7 +93,7 @@ header .brown-button:hover a {
 
 main {
   margin: auto;
-  max-width: 1100px;
+  max-width: 1080px;
 }
 
 .main-container {
@@ -104,7 +104,6 @@ main {
 
 .main-text {
   width: 50%;
-  margin-left: 50px;
 }
 
 .main-text h1 {
@@ -116,8 +115,10 @@ main {
 .main-text p {
   color: var(--text-mid);
   font-size: 1.5rem;
+  padding-right: 20px;
+  text-align: justify;
 }
-/*
+/* Ajustando 🧑‍🔧
 .main-text button {
   margin-top: 100px;
   cursor: pointer;
@@ -137,5 +138,59 @@ main {
 }
 
 .main-image img {
-  max-width: 470px;
+  max-width: 100%;
+}
+
+.acervo-button {
+  margin-top: 100px;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  padding: 20px;
+  border-radius: 7px;
+  background-color: var(--cream);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.acervo-button:hover {
+  background-color: var(--warm-brown);
+}
+
+.acervo-button a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-size: 1.1rem;
+}
+
+.acervo-button:hover a {
+  color: var(--white);
+}
+
+@media screen and (max-width: 1080px) {
+  .header-box {
+    justify-content: space-around;
+  }
+  .main-container {
+    flex-direction: column;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-text h1 {
+    margin: auto;
+    font-size: 4rem;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .main-text {
+    width: 70vw;
+  }
+  .main-image img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  
 }
