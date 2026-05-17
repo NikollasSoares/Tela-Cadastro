@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>BiblioLivre</title>
     <link rel="shortcut icon" href="images/booksFavicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
@@ -11,11 +11,16 @@
     <header>
         <nav class="header-box">
             <h1><span class="bookEmoji">📖</span>Biblio<span class="libre">Libre</span></h1>
-            <div class="header-links">
-                <a href="index.html" >Início</a>
-                <a href="pages/telaAcervo.html">Acervo</a>
-                <a href="pages/telaSobre.html">Sobre o Projeto</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
+            <ul class="header-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="pages/telaAcervo.html">Acervo</a></li>
+                <li><a href="pages/telaSobre.html">Sobre o Projeto</a></li>
+            </ul>
             <button class="brown-button"><a href="pages/telaCadastro.html">Entrar/Cadastrar</a></button>
         </nav>
     </header>
@@ -31,5 +36,6 @@
             </div>
         </div>
     </main>
+    <script src="mobile-navbar.js"></script>
 </body>
 </html>
