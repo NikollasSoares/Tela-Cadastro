@@ -3,11 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login — BiblioLivre</title>
     <link rel="shortcut icon" href="../images/userFavicon.png" type="image/x-icon">
     <link rel="stylesheet" href="loginCadastro.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="form-image">
+            <img src="../images/drDoomStudying.png" alt="Ilustração de pessoa estudando">
+        </div>
+
+        <div class="form">
+            <div class="form-header">
+                <div class="title">
+                    <h1>Entrar</h1>
+                </div>
+            </div>
+
+            <form onsubmit="return false">
+                <div class="input-group">
+                    <div class="input-box">
+
+                        <label for="cpf">CPF</label>
+                        <input
+                            oninput="formatarCPF(this)"
+                            id="cpf"
+                            type="text"
+                            maxlength="14"
+                            name="cpf"
+                            placeholder="000.000.000-00"
+                            autocomplete="off"
+                            required>
+
+                        <label for="password">Senha</label>
+                        <input
+                            id="password"
+                            type="password"
+                            name="password"
+                            placeholder="Digite sua senha"
+                            required>
+
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button type="button" onclick="login()">Entrar</button>
+                </div>
+            </form>
+
+            <p class="link-cadastro">Não tem cadastro? <a href="telaCadastro.html">Criar conta</a></p>
+        </div>
+    </div>
+
+    <script src="../javascript.js"></script>
 </body>
 </html>

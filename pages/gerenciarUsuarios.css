@@ -1,0 +1,325 @@
+/* Layout geral da página */
+.pagina-gerenciar {
+    display: block;
+    background: var(--cream-dark);
+    min-height: 100vh;
+}
+
+/* ── Navbar ─────────────────────────────────────────────── */
+header {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.header-box-gerenciar {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-box-gerenciar h1 {
+    font-size: 1.4rem;
+    color: var(--text-dark);
+}
+
+.bookEmoji {
+    background-color: var(--sage-light);
+    padding: 3px 5px;
+    border-radius: 6px;
+    margin-right: 5px;
+}
+
+.libre {
+    color: var(--sage-light);
+}
+
+.nav-links-gerenciar a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: var(--text-mid);
+    transition: color 0.2s;
+}
+
+.nav-links-gerenciar a:hover {
+    color: var(--sage);
+}
+
+/* ── Área principal ─────────────────────────────────────── */
+.gerenciar-main {
+    max-width: 900px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+}
+
+.gerenciar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 1.5rem;
+}
+
+.gerenciar-header h2 {
+    font-size: 1.6rem;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+}
+
+.subtitulo {
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+.btn-novo {
+    display: inline-block;
+    text-decoration: none;
+    background: var(--sage);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.btn-novo:hover {
+    background: var(--warm-brown);
+}
+
+/* ── Tabela ─────────────────────────────────────────────── */
+.tabela-wrapper {
+    background: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.tabela-usuarios {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela-usuarios thead tr {
+    background: var(--cream);
+}
+
+.tabela-usuarios th {
+    text-align: left;
+    padding: 14px 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--border);
+}
+
+.tabela-usuarios td {
+    padding: 14px 20px;
+    font-size: 0.92rem;
+    color: var(--text-mid);
+    border-bottom: 1px solid var(--cream-dark);
+}
+
+.tabela-usuarios tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.tabela-usuarios tbody tr:hover {
+    background: var(--cream);
+}
+
+/* ── Botões de ação na tabela ───────────────────────────── */
+.btn-acao {
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin-right: 6px;
+    transition: all 0.2s;
+}
+
+.btn-editar {
+    background: var(--sage-pale);
+    color: var(--sage);
+    border-color: var(--sage-light);
+}
+
+.btn-editar:hover {
+    background: var(--sage);
+    color: var(--white);
+}
+
+.btn-excluir {
+    background: #fdecea;
+    color: #b84040;
+    border-color: #f0b8b8;
+}
+
+.btn-excluir:hover {
+    background: #b84040;
+    color: var(--white);
+}
+
+/* ── Estado vazio ───────────────────────────────────────── */
+.estado-vazio {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    gap: 12px;
+}
+
+.vazio-emoji {
+    font-size: 2.5rem;
+}
+
+.estado-vazio p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+/* ── Modal de edição ────────────────────────────────────── */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(44, 36, 22, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.modal {
+    background: var(--white);
+    border-radius: 14px;
+    width: 440px;
+    max-width: 95vw;
+    padding: 2rem;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.modal-header h3 {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+}
+
+.modal-fechar {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.modal-fechar:hover {
+    background: var(--cream-dark);
+}
+
+.modal-form label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+    margin-top: 14px;
+}
+
+.label-opcional {
+    font-weight: 400;
+    color: var(--text-light);
+    font-size: 0.75rem;
+}
+
+.modal-form input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    background: var(--cream);
+    transition: border 0.2s;
+}
+
+.modal-form input:focus {
+    outline: none;
+    border-color: var(--terracotta);
+}
+
+.modal-form input:disabled {
+    background: var(--cream-dark);
+    color: var(--text-light);
+    cursor: not-allowed;
+}
+
+.modal-acoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 1.8rem;
+    justify-content: flex-end;
+}
+
+.btn-cancelar {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--cream);
+    color: var(--text-mid);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-cancelar:hover {
+    background: var(--cream-dark);
+}
+
+.btn-salvar {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background: var(--terracotta);
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-salvar:hover {
+    background: var(--warm-brown);
+}
+
+/* ── Responsivo ─────────────────────────────────────────── */
+@media screen and (max-width: 650px) {
+    .gerenciar-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .tabela-usuarios th:nth-child(1),
+    .tabela-usuarios td:nth-child(1) {
+        display: none;
+    }
+}
